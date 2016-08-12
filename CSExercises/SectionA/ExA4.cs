@@ -15,12 +15,18 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            //PUT YOUR CODE HERE           
+            //PUT YOUR CODE HERE  
+            string inputString = Console.ReadLine();
+            double inputDouble = Convert.ToDouble(inputString);
+
+            double result = square(inputDouble);
+            Console.WriteLine(result);
         }
 
         public static double square(double x)
         {
             //PUT YOUR CODE HERE
+            Console.WriteLine(Math.Pow(x, 2));
             return 0;
 
         }
