@@ -2,7 +2,9 @@ using System;
 
 namespace CSExercises
 {
-    //3.	Write a program that would compute the grade for a mark that the student gets.  The program should take an integer number between 0 and 100 and print the following:
+    //3.	Write a program that would compute the grade for a mark that the student gets. 
+    //The program should take an 
+    //integer number between 0 and 100 and print the following:
     //You scored 73 marks which is B grade.
     //where 73 is the input and B is calculated by the program.  Use the following table for computing the grades:
 
@@ -22,14 +24,20 @@ namespace CSExercises
             int mark = Convert.ToInt32(Console.ReadLine());
 
             string grade = CalculateGrade(mark);
-            Console.WriteLine("You scored {0} marks which is {1} grade.", grade);
+            Console.WriteLine("You scored {0} marks which is {1} grade.",mark, grade);
 
         }
 
         public static string CalculateGrade(int mark)
         {
             //YOUR CODE HERE
-            return null;
+            string grade;
+            if (mark >= 80 && mark <= 100) { grade = "A" ; }
+            else if (mark >= 60 && mark <= 79) { grade = "B"; }
+            else if (mark >= 40 && mark <= 59) { grade = "C"; }
+            else if (mark >= 0 && mark <= 39) { grade = "F"; }
+            else { grade = "**ERROR**"; }
+            return grade;
         }
     }
 }

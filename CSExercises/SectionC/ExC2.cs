@@ -22,6 +22,16 @@ namespace CSExercises
             int age = Convert.ToInt32(Console.ReadLine());
 
             //YOUR CODE HERE
+            if (gender == "M" || gender=="m") 
+            {
+                if (age >= 40) { Console.WriteLine("Gud moring Uncle {0}", name); }
+                else{ Console.WriteLine("Gud morning Mr.{0}", name);}
+            }
+            if (gender == "F" || gender == "f")
+            {
+                if (age >= 40) { Console.WriteLine("Gud moring Aunty {0}", name); }
+                else { Console.WriteLine("Gud morning Ms.{0}", name); }
+            }
         }
     }
 }

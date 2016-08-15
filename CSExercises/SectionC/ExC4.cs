@@ -22,7 +22,13 @@ namespace CSExercises
         {
 
             //Your code here
+            Console.WriteLine("Enter distance: ");
+            String inputKm = Console.ReadLine();
+            double km = Convert.ToDouble(inputKm);
+            double dist = Math.Ceiling(km*10);
 
+            double total = CalculateFare(dist);
+            Console.WriteLine("Total : {0}", total);
 
 
         }
@@ -30,9 +36,20 @@ namespace CSExercises
         public static double CalculateFare(double distance)
         {
             //YOUR CODE HERE
-            return 0;
-
-
+            double fare=0;
+            if(distance>0 && distance <5)
+            {
+                fare = 2.40;
+            }
+            else if (distance <= 85)
+            {
+                fare = 2.40 + 0.04*distance;
+            }
+            else 
+            {
+                fare = 2.40 + (85 * 0.04) + (distance - 90) * 0.05;
+            }
+            return fare;
 
         }
     }

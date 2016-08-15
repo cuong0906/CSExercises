@@ -14,8 +14,13 @@ namespace CSExercises
             string name = Console.ReadLine();
             Console.Write("Please enter your gender (M/F): ");
             string gender = Console.ReadLine();
+            
 
             //YOUR CODE HERE
+            if(gender == "M" || gender=="m")
+            {
+                Console.WriteLine("Gud morning Mr.{0}", name);
+            }
         }
     }
 }
