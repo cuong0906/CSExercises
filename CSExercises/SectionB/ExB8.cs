@@ -16,12 +16,19 @@ namespace CSExercises
         public static void Main(string[] args)
         {
             //YOUR CODE HERE
+            Console.WriteLine("Eneter distance: ");
+            string distanceStr = Console.ReadLine();
+            double distance = Convert.ToDouble(distanceStr);
+
+            Console.WriteLine(CalculateFare(distance));
         }
 
         public static double CalculateFare(double distance)
         {
             //YOUR CODE HERE
-            return 0;
+            double charge =Math.Round((2.40 + distance) * 0.4,1);
+            return charge;
+
 
         }
     }
