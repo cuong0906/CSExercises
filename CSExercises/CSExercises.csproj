@@ -47,7 +47,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CSExercises.ExC4</StartupObject>
+    <StartupObject>CSExercises.ExG1</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -84,6 +84,7 @@
     <Compile Include="SectionD\ExD2.cs" />
     <Compile Include="SectionD\ExD3.cs" />
     <Compile Include="SectionD\ExD4.cs" />
+    <Compile Include="SectionE\Class1.cs" />
     <Compile Include="SectionE\ExE1.cs" />
     <Compile Include="SectionE\ExE2.cs" />
     <Compile Include="SectionE\ExE3.cs" />

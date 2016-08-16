@@ -18,14 +18,34 @@ namespace CSExercises
         public static void Main(string[] args)
         {
             //YOUR CODE HERE
+            int input = 0;
+            bool isValidInput = false;
 
+            while(false == isValidInput)
+            {
+                Console.WriteLine("Enter a no. : ");
+                isValidInput = int.TryParse(Console.ReadLine(),out input);
+            }
+
+            Console.WriteLine("Number {0} is {1} number", input,
+                IsArmstrongNumber(input)==true);
         }
 
 
         public static bool IsArmstrongNumber(int n)
         {
             //YOUR CODE HERE
-            return false;
+            int remainer = 0;
+            int sum = 0;
+
+            for (int i = n; i > 0; i = i / 10) 
+            {
+                remainer = i % 10;
+                sum = sum + remainer * remainer * remainer;
+            }
+            if (sum == n)
+                return true;
+            else return false;
 
         }
     }

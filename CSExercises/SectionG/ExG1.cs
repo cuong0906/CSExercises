@@ -19,7 +19,7 @@ namespace CSExercises
         {
             Console.Write("Please enter a phrase: ");
             string phrase = Console.ReadLine();
-
+            phrase.ToLower();
             Console.WriteLine("Total number of vowels: " + CountVowels(phrase));
 
             int[] vowelCount = CountIndividualVowels(phrase);
@@ -32,7 +32,13 @@ namespace CSExercises
         public static int CountVowels(string phrase)
         {
             //YOUR CODE HERE
-            return 0;
+            int vowelCount = 0;
+            for (int i = 0; i < phrase.Length; i++) 
+            {
+                if (phrase[i] == 'a' || phrase[i] == 'e' || phrase[i] == 'i' ||
+                    phrase[i] == 'o' || phrase[i] == 'u') { vowelCount++; }
+            }
+            return vowelCount;
 
 
         }
@@ -41,10 +47,15 @@ namespace CSExercises
         {
             int[] vowelCount = new int[5];
             //YOUR CODE HERE
-
-
-
-            return vowelCount;
+            for (int i = 0; i < phrase.Length; i++)
+            {
+                if (phrase[i] == 'a') { vowelCount[0]++; }
+                else if (phrase[i] == 'e') { vowelCount[1]++; }
+                else if (phrase[i] == 'i') { vowelCount[2]++; }
+                else if (phrase[i] == 'o') { vowelCount[3]++; }
+                else if (phrase[i] == 'u') { vowelCount[4]++; }
+            }
+                return vowelCount;
         }
     }
 }

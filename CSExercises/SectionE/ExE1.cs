@@ -31,6 +31,9 @@ namespace CSExercises
         public static int CalculateFactorialInc(int n)
         {
             //YOUR CODE HERE
+            int up = 1;
+            for (int i = 1; i <= n;i++ )
+            {  Console.Write(" {0} ",up= up*i ); }
             return 0;
 
 
@@ -39,7 +42,10 @@ namespace CSExercises
         public static int CalculateFactorialDec(int n)
         {
             //YOUR CODE HERE
-            return 0;
+            int down = 1;
+            for (int j = n; j <=0;j--)
+            { Console.Write(" {0} ", down = down * j); }
+                return 0;
 
 
         }
