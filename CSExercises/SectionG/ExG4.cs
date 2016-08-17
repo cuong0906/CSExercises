@@ -30,20 +30,20 @@ namespace CSExercises
         }
         public static void PrintName(string[] name) 
         {
-            Console.Write("{");
+            Console.Write("-------NAME--------\n");
             for (int l = 0; l < name.Length; l++) 
             {
-                Console.Write(name[l] + " ");
+                Console.Write(name[l] + "\n");
             }
-            Console.WriteLine("}");
+            Console.WriteLine("--------------");
         }
         public static void PrintMark(int[] mark) 
         {
-            Console.Write("{");
+            Console.Write("----MARK---\n");
             for (int k = 0; k < mark.Length; k++)
-            { Console.Write(mark[k] + " ");
+            { Console.Write(mark[k] + "\n");
             }
-            Console.WriteLine("}");
+            Console.WriteLine("-------------");
         }
         public static string[] SortName(string[] name) 
         {

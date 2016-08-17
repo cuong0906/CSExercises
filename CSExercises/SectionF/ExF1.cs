@@ -44,30 +44,56 @@ namespace CSExercises
         {
             //YOUR CODE HERE
             //Assign the result to minMonth, maxMonth and avg variable/parameter accordingly
+            int sum = 0;
+            minMonth = 0;
+            maxMonth = 0;
 
+            for (int i = 0; i < sales.Length; i++) 
+            {
+                sum = sum + sales[i];
+                if (sales[i] <= sales[minMonth]) { minMonth = i; }
+                if (sales[i] >= sales[maxMonth]) { maxMonth = i; }
+            }
+            avg = sum / sales.Length;
 
         }
 
         public static int CalculateMinMonth(int[] sales)
         {
             //YOUR CODE HERE
-            return 0;
+
+            int minMonth = 0;
+            for (int i = 0; i < sales.Length; i++) 
+            {
+                if (sales[i] <= sales[minMonth]) { minMonth = i; };
+            }
+                return minMonth;
 
         }
 
         public static int CalculateMaxMonth(int[] sales)
         {
             //YOUR CODE HERE
-            return 0;
-
-
+            int maxMonth = 0;
+            for (int i = 0; i < sales.Length; i++)
+            {
+                if (sales[i] > +sales[maxMonth]) { maxMonth = i; } 
+            }
+            return maxMonth;
 
         }
 
         public static double CalculateAvgSales(int[] sales)
         {
             //YOUR CODE HERE
-            return 0;
+            int sum = 0;
+            double avg;
+            for (int i = 0; i < sales.Length; i++) 
+            {
+                sum = sum + sales[i];
+            }
+            avg = sum / sales.Length;
+            return avg;
 
         }
 
