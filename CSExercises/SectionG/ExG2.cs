@@ -18,7 +18,6 @@ namespace CSExercises
         {
             Console.Write("Please enter a phrase: ");
             string phrase = Console.ReadLine();
-
             if (IsPalindrome(phrase))
             {
                 Console.WriteLine("Palindrome");
@@ -32,11 +31,23 @@ namespace CSExercises
         public static bool IsPalindrome(string phrase)
         {
             //YOUR CODE HERE
-            return false;
+            string[] noSpace = phrase.Split();// remove space
+            string joinedStr = "";
+            
+            for (int i = 0; i < noSpace.Length; i++)
+            {
+                joinedStr += noSpace[i];// join the string together
+            }
 
-
-
-
+            Console.WriteLine(joinedStr);
+            string lowerPhrase = joinedStr.ToLower();
+            int j = lowerPhrase.Length-1;// last string after split
+            for (int i = 0; i <= j ; i++)
+            {
+                if (lowerPhrase[i] != lowerPhrase[j]- i)
+                    return false;
+            }
+            return true;
         }
     }
 }

@@ -47,7 +47,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CSExercises.ExG1</StartupObject>
+    <StartupObject>CSExercises.ExG3</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -98,6 +98,7 @@
     <Compile Include="SectionG\ExG2.cs" />
     <Compile Include="SectionG\ExG3.cs" />
     <Compile Include="SectionG\ExG4.cs" />
+    <Compile Include="SectionG\Quiz5.cs" />
     <Compile Include="SectionH\ExH1.cs" />
     <Compile Include="SectionH\ExH2.cs" />
     <Compile Include="SectionH\ExH3.cs" />

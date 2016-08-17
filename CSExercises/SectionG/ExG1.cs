@@ -40,7 +40,6 @@ namespace CSExercises
             }
             return vowelCount;
 
-
         }
 
         public static int[] CountIndividualVowels(string phrase)
