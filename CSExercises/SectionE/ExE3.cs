@@ -45,7 +45,7 @@ namespace CSExercises
             {
                 if (n % i == 0)
                 {   isPrime = false;
-                    break;
+                    //break;
                 }
             }
              return isPrime;

@@ -11,7 +11,16 @@ namespace CSExercises
         {
             //YOUR CODE HERE
             //Hint: you can use ExE4.IsPerfectNumber() method here
-
+            //int sum = 0;
+            for (int i = 1000; i >= 1; i--) 
+            {
+                //Console.WriteLine(i);
+                if (ExE4.IsPerfectNumber(i))
+                {
+                    Console.WriteLine(i);
+                }
+            }
+           
 
 
         }

@@ -18,21 +18,34 @@ namespace CSExercises
             Console.Write("Please enter an integer: ");
             int n = Convert.ToInt32(Console.ReadLine());
 
-            if (IsPerfectNumber(n))
-            {
-                Console.WriteLine("Perfect Number");
-            }
-            else
-            {
-                Console.WriteLine("Not Perfect Number");
-            }
+            for (int i = 6; i >= 1; i--) { Console.WriteLine(i); }
+
+                if (IsPerfectNumber(n))
+                {
+                    Console.WriteLine("Perfect Number");
+                }
+                else
+                {
+                    Console.WriteLine("Not Perfect Number");
+                }
         }
 
         public static bool IsPerfectNumber(int n)
         {
             //YOUR CODE HERE
-            return false;
+            int sum = 0;
+            if (n < 0) { return false; }
+            for (int i = n; i >= 1;i--) 
+            {
 
+                if (n % i == 0) 
+                {
+                    if (i != n) { sum = sum + i; };
+                } 
+            }
+            if (sum == n) { return true; } 
+            else
+            return false;
 
         }
     }
